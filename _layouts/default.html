@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
+{% assign current = page.url | downcase | split: '/' %}
+<nav class="nav">
+  <div class="nav-container">
+    <ul>
+      <li class="transition">
+        <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "about" or current[1] == "blog"  %} class="normal" {% endif %} class="active">Home</a>
+      </li>
+      <li class="transition">
+        <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
+      </li>
+      <li class="transition">
+        <a href="{{ '/about' | prepend: site.baseurl }}" {% if current[1] == "about" %} class="active"{% endif %} >About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% if page.post-header == true %}
+{% include post-header.html %}
+{% endif %}
+{% if page.project-header == true %}
+{% include project-header.html %}
+{% endif %}
+<main>
+  {{ content }}
+</main>
 
-    {% include navigation.html %}
+{% include footer.html %}
 
-    <main>
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
-  </body>
+</body>
 </html>

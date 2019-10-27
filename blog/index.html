@@ -1,0 +1,55 @@
+---
+layout: default
+title: Blog
+description: 전문 지식을 전달하기보단, 초심자를 위한 얕게 알고 널리 쓰는 제 경험 위주 코딩을 모아놓은
+permalink: /blog/
+project-header: true
+pagination:
+  enabled: true
+---
+
+<ul class="catalogue">
+  {% for post in paginator.posts%}
+    <li class="catalogue-item">
+        <a href={{site.url}}{{site.baseurl}}{{post.url}} >
+            {% if post.draft == true %}
+            <span class="catalogue-tag">
+            Coming Soon
+        </span>
+            {% endif %}
+            <p class="catalogue-type">
+                {{ post.category }}
+            </p>
+            <div class="catalogue-info transition">
+                <h1 class="catalogue-title">
+                    {{ post.title }}
+                </h1>
+                {% if page.subtitle %}
+                <p class="catalogue-sub">
+                    {{ post.subtitle }}
+                </p>
+                {% endif %}
+                <p class="catalogue-body">
+                    {{ post.content | truncatewords: 24 | strip_html }}
+                </p>
+            </div>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li>
+        <a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 이전</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li>
+        <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

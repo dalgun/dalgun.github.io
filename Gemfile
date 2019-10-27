@@ -1,4 +1,10 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
+group :development do
+  gem "jekyll", "~> 3.6"
+  gem 'jekyll-paginate-v2'
+  gem 'jekyll-tagging-related_posts'
+  gem 'jekyll-seo-tag'
+
+end

@@ -1,41 +1,50 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          Dalgun NOTE
+description:    "PlayGround, Dalgun NOTE"
+baseurl:        ""
+url:            "https://dalgun.github.io"
 
 # Google Analytics
-google_analytics: UA—XXXXXXXX-X
+google_analytics: UA-102144136-1
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Dalgun
+  url:          https://dalgun.github.io
+  email:        dalgun@icloud.com
+  github:       dalgun
+  instagram:    dalgoooooon
 
 # Build settings
 markdown:       kramdown
-include:
-  - _pages
+
 
 # Assets
 sass:
   sass_dir:     _sass
   style:        compressed
 
+
 # Gems
 plugins:
-  - jekyll-feed
-  - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-paginate-v2
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+permalink:  /blog/:year-:month-:day/:title
+
+
+# Pagination
+pagination:
+  enabled: true
+  per_page: 3
+  limit: 0
+  sort_field: "date"
+  sort_reverse: true
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: [ Gemfile, Gemfile.lock ]
 
 # Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+disqus:         dalgun-1

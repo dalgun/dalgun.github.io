@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Refactoring"
+title: "리팩토링 첫번째 이야기"
 subtitle: "소소한 리팩토링 일지"
 author: "Dalgun"
 category: "Coding"

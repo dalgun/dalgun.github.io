@@ -1,0 +1,49 @@
+ul.post-list {
+  margin: 20px;
+  padding: 0;
+  list-style-type: none;
+  width: 48%;
+
+  li.post-list-item {
+    display: block;
+    margin-bottom: 0.3rem;
+    border-bottom: 1px solid lightgray;
+    &:last-child {
+      border: none;
+    }
+
+    .post-list-item-title {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-family: $san-serif ;
+      text-decoration: none;
+      color: #212121;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        height: 100%;
+        width: 0;
+        left: 0;
+        opacity: .7;
+        transition: width .4s ease;
+        z-index: -5;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+
+    }
+
+    .post-list-item-date {
+      font-size: 1rem;
+      font-family: $san-serif ;
+      margin-right: 1rem;
+    }
+  }
+}

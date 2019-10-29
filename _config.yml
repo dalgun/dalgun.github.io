@@ -36,7 +36,7 @@ permalink:  /blog/:year-:month-:day/:title
 
 
 # Pagination
-paginate: 2
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 # Excludes

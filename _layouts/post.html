@@ -35,7 +35,33 @@ layout: default
 
   <!--큐레이션 영역-->
   {{ content }}
-
+  {% if page.comments == true %}
+  <div class="more-posts">
+    <div class="more-category">
+      <!-- 하단의 더보기의 링크는 자신의 사이트에 맞게 수정 -->
+      <h4>{{page.categories}} 카테고리의 다른 글</h4>
+      <a href="/category/{{ page.categories }}.html" class="more-button">더보기</a>
+    </div>
+    <table>
+      <tbody>
+      <!-- if문 도는 횟수 체크하기 위해 변수 선언 -->
+      {% assign category = page.category %}
+      {% for post in site.categories[category] limit : 3%}
+      <!-- 전체 포스트의 카테고리가 현재 들어와 있는 페이지의 카테고리와 같은지 판단-->
+      {% if post.categories == page.categories and post.title != page.title %}
+      <tr>
+        <!-- 각 포스트의 링크도 자신의 사이트에 맞게 수정 -->
+        <th class="more-posts-title">
+          <a href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+        </th>
+        <td class="more-posts-date">{{ post.date | date: '%Y. %m. %d' }}</td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
 </div>
 {% if page.comments == true %}
 {% include disqus_comments.html %}

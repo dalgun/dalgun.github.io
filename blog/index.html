@@ -2,10 +2,7 @@
 layout: default
 title: Blog
 description: 전문 지식을 전달하기보단, 초심자를 위한 얕게 알고 널리 쓰는 제 경험 위주 코딩을 모아놓은
-permalink: /blog/
 project-header: true
-pagination:
-  enabled: true
 ---
 
 <ul class="catalogue">
@@ -40,16 +37,14 @@ pagination:
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<nav class="pagination-container">
+    <div class="pagination">
     {% if paginator.previous_page %}
-    <li>
-        <a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 이전</a>
-    </li>
+        <a class="pagination-newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 이전</a>
     {% endif %}
     {% if paginator.next_page %}
-    <li>
-        <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &rarr;</a>
-    </li>
+        <a class="pagination-older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &rarr;</a>
     {% endif %}
-</ul>
+    </div>
+</nav>
 {% endif %}

@@ -28,7 +28,7 @@ sass:
 # Gems
 plugins:
   - jekyll-seo-tag
-  - jekyll-paginate-v2
+  - jekyll-paginate
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
@@ -36,12 +36,8 @@ permalink:  /blog/:year-:month-:day/:title
 
 
 # Pagination
-pagination:
-  enabled: true
-  per_page: 3
-  limit: 0
-  sort_field: "date"
-  sort_reverse: true
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock ]

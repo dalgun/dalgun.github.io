@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 group :development do
   gem "jekyll", "~> 3.6"
-  gem 'jekyll-paginate-v2'
+  gem 'jekyll-paginate'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-seo-tag'
 

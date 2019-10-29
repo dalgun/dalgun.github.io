@@ -6,6 +6,7 @@ type: about
 permalink: /about/
 post-header: true
 header-img: about.png
+comments: false
 ---
 
 

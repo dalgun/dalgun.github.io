@@ -4,6 +4,7 @@ title: "Code Refactoring"
 subtitle: "소소한 리팩토링 일지"
 author: "Dalgun"
 category: "Coding"
+comments: true
 tag: 
  - refactoring
  

@@ -37,4 +37,9 @@ layout: default
   {{ content }}
 
 </div>
+{% if page.comments == true %}
 {% include disqus_comments.html %}
+{% endif %}
+
+
+

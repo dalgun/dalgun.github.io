@@ -20,23 +20,6 @@ ul.post-list {
       color: #212121;
       position: relative;
 
-      &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        height: 100%;
-        width: 0;
-        left: 0;
-        opacity: .7;
-        transition: width .4s ease;
-        z-index: -5;
-      }
-
-      &:hover {
-        &:before {
-          width: 100%;
-        }
-      }
 
     }
 

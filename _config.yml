@@ -2,7 +2,7 @@
 title:          Dalgun NOTE
 description:    "PlayGround, Dalgun NOTE"
 baseurl:        ""
-url:            "https://dalgun.github.io"
+url:            "https://dalgun.dev"
 
 # Google Analytics
 google_analytics: UA-102144136-1
@@ -10,7 +10,7 @@ google_analytics: UA-102144136-1
 # Author
 author:
   name:         Dalgun
-  url:          https://dalgun.github.io
+  url:          https://dalgun.dev
   email:        dalgun@icloud.com
   github:       dalgun
   instagram:    dalgoooooon

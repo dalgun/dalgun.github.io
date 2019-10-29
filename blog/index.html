@@ -40,10 +40,10 @@ project-header: true
 <nav class="pagination-container">
     <div class="pagination">
     {% if paginator.previous_page %}
-        <a class="pagination-newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 이전</a>
+        <a class="pagination-newer" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; PREV</a>
     {% endif %}
     {% if paginator.next_page %}
-        <a class="pagination-older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">다음 &rarr;</a>
+        <a class="pagination-older" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">NEXT &rarr;</a>
     {% endif %}
     </div>
 </nav>

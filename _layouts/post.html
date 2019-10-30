@@ -35,6 +35,16 @@ layout: default
 
   <!--큐레이션 영역-->
   {{ content }}
+  <div class="pagination">
+    {% if page.next.url %}
+    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;{{page.next.title}}</a>
+    {% endif %}
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">{{page.previous.title}}&#8594;</a>
+    {% endif %}
+
+    <a href="#" class="top">Top</a>
+  </div>
   {% if page.comments == true %}
   <div class="more-posts">
     <div class="more-category">

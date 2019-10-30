@@ -1,45 +1,44 @@
-.pagination-container {
-  font-family: $source;
-  text-align: center;
-}
 .pagination {
+  border-top: .5px solid $grey-2;
+  font-family: $san-serif;
+  padding-top: 2rem;
   position: relative;
-}
-.pagination a {
-  position: relative;
-  display: inline-block;
-  color: #2c3e50;
-  text-decoration: none;
-  font-size: 1.0rem;
-  padding: 8px 16px 10px;
-}
-.pagination a:before {
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  background-color: #2c3e50;
-  border-radius: 24px;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  transition: all 0.2s;
-}
-.pagination a:hover{
-  color: #fff;
-}
-.pagination a:hover:before{
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
+  text-align: center;
 
-.pagination a.pagination-newer{
-  float: left;
-}
+  span {
+    color: $default-shade;
+    font-size: 1.1rem;
+  }
 
-.pagination a.pagination-older{
-  float: right;
-}
+  .top {
+    @include transition(all .3s ease-out);
+    color: $default-color;
+    font-family: $san-serif;
+    font-size: 1.1rem;
+    opacity: .6;
 
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .arrow {
+    @include transition(all .3s ease-out);
+    color: $default-color;
+    position: absolute;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+      text-decoration: none;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}

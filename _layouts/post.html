@@ -35,16 +35,9 @@ layout: default
 
   <!--큐레이션 영역-->
   {{ content }}
-  <div class="pagination">
-    {% if page.next.url %}
-    <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;{{page.next.title | truncatewords:2}}</a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a href="{{ page.previous.url | prepend: site.baseurl }}" class="right arrow">{{page.previous.title | truncatewords:2}}&#8594;</a>
-    {% endif %}
-
-    <a href="#" class="top">Top</a>
-  </div>
+  {% if page.comments == true %}
+  {% include disqus_comments.html %}
+  {% endif %}
   {% if page.comments == true %}
   <div class="more-posts">
     <div class="more-category">

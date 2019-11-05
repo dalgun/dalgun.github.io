@@ -212,6 +212,7 @@ REST API 도 각 POJO 에 따라서 여러개의 API 를 만들 것 없이 JSON 
 ~~소스와 그림만 많고 글이 적어 보이는 것은 기분탓입니다.~~
 
 
+[블로그에 있는 모든 소스는 여기서 확인할 수 있어요](https://github.com/dalgun/play)
 
 
 [^1]: PLAIN OLD JAVA OBJECT 로, "getter / setter를 가진 단순한 자바 오브젝트"로 정의

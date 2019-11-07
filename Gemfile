@@ -6,5 +6,6 @@ group :development do
   gem 'jekyll-paginate'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 
 end

@@ -3,12 +3,9 @@ layout: post
 title: "Web Jar 만들어 보기"
 subtitle: "사설 저장소용 web jar 쉽게 만들기"
 author: "Dalgun"
-category: "Coding"
+category: "Spring boot"
+tag: [web jar, third party library]
 comments: true
-tag: 
- - spring boot
- - web jar
- - third party library
 ---
 
 # 유료 UI FRAMEWORK 을 Private Repository 에서 관리하기

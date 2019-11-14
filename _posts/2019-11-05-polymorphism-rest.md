@@ -3,13 +3,9 @@ layout: post
 title: "JsonSubType 으로 Polymorphism Rest 만들기"
 subtitle: "잔머리로 만들어 보는 REST"
 author: "Dalgun"
-category: "Coding"
+category: "Spring boot"
+tags: [rest api,json sub type,polymorphism]
 comments: true
-tag: 
- - spring boot
- - rest api
- - json sub type
- - polymorphism
 ---
 
 ![다형성](https://miro.medium.com/max/1276/1*cFSJ95jyw-ACiWaIRxAbbg.jpeg)

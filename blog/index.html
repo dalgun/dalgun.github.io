@@ -1,39 +1,29 @@
 ---
 layout: default
-title: Blog
-description: 나도 하고 싶다 , 기록! :)
+title: Post
+description: 개인 공부하면서 작성한 글이라 잘못된 내용이 있을 수 있습니다. <br>잘못된 내용은 편하게 말씀해주시면 수정하겠습니다 :)
 project-header: true
+
 ---
 
-<ul class="catalogue">
-  {% for post in paginator.posts%}
-    <li class="catalogue-item">
-        <a href={{site.url}}{{site.baseurl}}{{post.url}} >
-            {% if post.draft == true %}
-            <span class="catalogue-tag">
-            Coming Soon
-        </span>
-            {% endif %}
-            <p class="catalogue-type">
-                {{ post.category }}
+<div class="catalogue">
+    {% for post in paginator.posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+        <div>
+            <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+            <p class="catalogue-category">{{ post.categories | first }}</p>
+            <h1 class="catalogue-title">{{ post.title }}</h1>
+
+            <div class="catalogue-line"></div>
+
+            <p class="catalogue-content">
+                {{ post.content | strip_html | truncatewords: 30 }}
             </p>
-            <div class="catalogue-info transition">
-                <h1 class="catalogue-title">
-                    {{ post.title }}
-                </h1>
-                {% if page.subtitle %}
-                <p class="catalogue-sub">
-                    {{ post.subtitle }}
-                </p>
-                {% endif %}
-                <p class="catalogue-body">
-                    {{ post.content | truncatewords: 24 | strip_html }}
-                </p>
-            </div>
-        </a>
-    </li>
+
+        </div>
+    </a>
     {% endfor %}
-</ul>
+</div>
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}

@@ -3,11 +3,9 @@ layout: post
 title: "Spring batch+Scheduler 구현 해보기"
 subtitle: "Tasklet 으로 Spring Batch, 날로 먹기"
 author: "Dalgun"
-category: "Coding"
+category: "Spring boot"
+tags: [Spring batch]
 comments: true
-tag: 
- - spring boot
- - spring batch
  
 ---
 

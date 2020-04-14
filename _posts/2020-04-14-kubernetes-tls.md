@@ -38,11 +38,13 @@ spec:
           servicePort: 80
 ```
 
-# HTTPS 호출 하려고 봤더니
+# curl: (60) SSL certificate : unable to get local issuer certificate
 
 ![https-fail](/assets/img/2020-04-14/kuber1.png)
 
-인증서가 적용이 안되어 HTTPS 호출시 오류가 발생한다
+인증서가 적용이 안된 ingress controller 에 HTTPS 호출시 오류가 발생한다
+
+
 
 # 인증서를 적용해보자
 

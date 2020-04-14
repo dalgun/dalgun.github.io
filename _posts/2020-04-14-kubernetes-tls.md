@@ -3,7 +3,7 @@ layout: post
 title: "Kubernetes Ingress Nginx 인증서(TLS) 적용"
 subtitle: "Kubernetes Ingress, TLS 쉽게 적용 하기"
 author: "Dalgun"
-category: "Linux"
+category: "kubernetes"
 tag: [Kubernetes, Ingress Nginx, TLS, 인증]
 comments: true
 ---

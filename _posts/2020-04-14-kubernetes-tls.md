@@ -10,6 +10,13 @@ comments: true
 
 ![thumb](https://www.nginx.com/wp-content/uploads/2020/03/NGINX-Plus-features_Kubernetes-Ingress-Controller.png)
 
+# curl: (60) SSL certificate : unable to get local issuer certificate
+
+![https-fail](/assets/img/2020-04-14/kuber1.png)
+
+인증서가 적용이 안된 ingress controller 에 HTTPS 호출시 오류가 발생한다
+
+
 
 # Kubernetes Ingress Settings
 tls 옵션이 없는 상태의 ingress 설정
@@ -37,12 +44,6 @@ spec:
           serviceName: admin-ui-service-test
           servicePort: 80
 ```
-
-# curl: (60) SSL certificate : unable to get local issuer certificate
-
-![https-fail](/assets/img/2020-04-14/kuber1.png)
-
-인증서가 적용이 안된 ingress controller 에 HTTPS 호출시 오류가 발생한다
 
 
 

@@ -48,13 +48,13 @@ spec:
 
 인증서 key, crt 파일로 secret tls 생성 후 secret 을 tls 옵션으로 지정
 
-```
+```shell script
 $> kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
 ```
 
 ---
 
-```
+```yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:

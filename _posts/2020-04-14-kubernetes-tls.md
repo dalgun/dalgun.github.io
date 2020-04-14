@@ -48,7 +48,7 @@ spec:
 
 ## Secret 생성
 
-```shell script
+```
   kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
 ```
 

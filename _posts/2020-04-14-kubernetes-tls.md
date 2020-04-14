@@ -49,8 +49,10 @@ spec:
 인증서 key, crt 파일로 secret tls 생성
 
 ```shell script
+
 //시크릿에 인증서 등록
 $> kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
+
 ```
 
 생성된 secret 을 tls 옵션으로 지정

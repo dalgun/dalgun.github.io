@@ -46,6 +46,12 @@ spec:
 
 # 인증서를 적용해보자
 
+## Secret 생성
+
+**kubectl** create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
+
+## Ingress Yaml 수정 및 적용
+
 ```yaml
 apiVersion: extensions/v1beta1
 kind: Ingress

@@ -46,16 +46,11 @@ spec:
 
 # 인증서를 적용해보자
 
-인증서 key, crt 파일로 secret tls 생성
+인증서 key, crt 파일로 secret tls 생성 후 secret 을 tls 옵션으로 지정
 
 ```shell script
-//시크릿에 인증서 등록
 $> kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
 ```
-
-
-생성된 secret 을 tls 옵션으로 지정
-
 
 
 ```yaml
@@ -85,6 +80,7 @@ spec:
           serviceName: admin-ui-service-test
           servicePort: 80
 ```
+
 
 > nginx.ingress.kubernetes.io/ssl-direct: "true" 로 변경시 http 들어오는 호출을 모두 https 로 자동 리다이렉션 한다
 

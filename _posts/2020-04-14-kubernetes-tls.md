@@ -52,7 +52,7 @@ spec:
 $> kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
 ```
 
-
+---
 
 ```
 apiVersion: extensions/v1beta1

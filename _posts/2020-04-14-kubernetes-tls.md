@@ -46,10 +46,10 @@ spec:
 
 # 인증서를 적용해보자
 
-## Secret 생
+## Secret 생성
 
 ```shell script
-kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
+  kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
 ```
 
 ## Ingress Yaml 수정 및 적용

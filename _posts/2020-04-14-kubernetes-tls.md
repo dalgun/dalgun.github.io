@@ -51,7 +51,9 @@ spec:
 
 ## Secret 생성
 
-**kubectl** create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
+```bash
+$> kubectl create secret tls ab-tls --key dalgun-key.key --cert dalgun-crt.crt
+```
 
 ## Ingress Yaml 수정 및 적용
 

@@ -46,7 +46,7 @@ about Docker Desktop
 
 # Prepare Docker ELK
 ## Docker login
-```
+```bash
 $> docker login
 ```
 
@@ -56,7 +56,7 @@ $> docker login
 
 ## Git Downloads
 
-```
+```bash
 $> git clone https://github.com/dalgun/docker.git
 $> cd docker
 $> cd docker-elk-master
@@ -181,7 +181,7 @@ volumes:
 
 yml 에 각 이미지의 version을 arguments를 통해 가져오게 되어있는데, docker-elk-master 폴더 속 .env 파일에 그 정보들이 담겨 있습니다.
 
-```
+```bash
 $> vi .env
 ```
 
@@ -192,14 +192,14 @@ ELK_VERSION=7.5.1
 docker-compose.yml 에 있는 폴더에서 명령어 실행
 
 구동할때
-```
+```bash
 $> docker-compose up -d
 ```
 
 ![docker-up](/assets/img/2020-04-15/docker-up.png)
 
 정지할때
-```
+```bash
 $> docker-compose down
 ```
 

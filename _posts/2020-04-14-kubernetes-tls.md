@@ -8,7 +8,7 @@ tag: [Kubernetes, Ingress Nginx, TLS, 인증]
 comments: true
 ---
 
-![thumb](https://www.nginx.com/wp-content/uploads/2020/03/NGINX-Plus-features_Kubernetes-Ingress-Controller.png)
+![thumb](https://www.nginx.com/wp-content/uploads/2020/03/NGINX-Plus-features_Kubernetes-Ingress-Controller.png)[^1]
 
 # curl: (60) SSL certificate : unable to get local issuer certificate
 

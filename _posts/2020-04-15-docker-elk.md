@@ -3,7 +3,7 @@ layout: post
 title: "Docker ELK install on mac"
 subtitle: "ELK, Docker로 쉽게 설치해보자"
 author: "Dalgun"
-category: "docker"
+category: "Docker"
 tag: [docker, elk]
 comments: true
 ---

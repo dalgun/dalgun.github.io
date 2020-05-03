@@ -3,7 +3,7 @@ layout: post
 title: "Docker registry remote delete"
 subtitle: "docker image 원격 삭제 shell script"
 author: "Dalgun"
-category: "docker"
+category: "Docker"
 tag: [docker, shell script, rest, docker-registry]
 comments: true
 ---

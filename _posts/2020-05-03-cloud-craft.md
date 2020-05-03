@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cloud Infrastructure Draw"
-subtitle: "클라우드 인프라 구조도 그리"
+subtitle: "클라우드 인프라 구조도 그리기"
 author: "Dalgun"
 category: "Cloud"
 tag: [aws, cloud, draw]
@@ -33,7 +33,7 @@ comments: true
 
 ## 구성도 그대로 코드로
 
-Terraform 을 사용하고 계신다면! 최고의 옵션! `Terraform 에 대해선 조금 더 공부해세 포스팅 할게요!`
+Terraform 을 사용하고 계신다면! 최고의 옵션! `Terraform 에 대해선 조금 더 공부해서 포스팅 할게요!`
 
 Export 누르고(물론 PNG 파일로도 변환 가능해요!)
 
